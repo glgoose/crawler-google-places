@@ -5,7 +5,7 @@
   "type": "object",
   "title": "The Root Schema",
   "required": [
-    "title",
+    "businessName",
     "totalScore",
     "categoryName",
     "address",
@@ -16,7 +16,7 @@
     "url"
   ],
   "properties": {
-    "title": {
+    "businessName": {
       "$id": "#/properties/title",
       "type": "string",
       "title": "The Title Schema",
