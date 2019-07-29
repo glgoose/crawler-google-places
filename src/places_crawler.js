@@ -18,7 +18,7 @@ const extractPlaceDetail = async (page, includeReviews, includeImages) => {
     await page.waitForSelector(PLACE_TITLE_SEL, { timeout: DEFAULT_TIMEOUT });
     const detail = await page.evaluate((placeTitleSel) => {
         return {
-            title: $(placeTitleSel).text().trim(),
+            businessName: $(placeTitleSel).text().trim(),
             totalScore: $('span.section-star-display').eq(0).text().trim(),
             categoryName: $('[jsaction="pane.rating.category"]').text().trim(),
             address: $('[data-section-id="ad"] .widget-pane-link').text().trim(),

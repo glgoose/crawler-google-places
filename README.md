@@ -45,7 +45,7 @@ Example results item:
 
 ```text
 {
-  "title": "Scotiabank",
+  "businessName": "Scotiabank",
   "totalScore": 3.7,
   "categoryName": "Bank",
   "address": "201 Bishopsgate, London EC2M 3NS, UK",
